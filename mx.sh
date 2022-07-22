@@ -21,9 +21,11 @@ echo
 
 echo "Enter domain name"
 read DOMAIN
+echo
 echo "record types A, ANY, CNAME, MX, NS, PTR, SOA, SRV"
 echo "Enter record type, defaults to MX if not set"
 read RECORD
+echo
 
 if [ -z "$RECORD" ]; then
   RECORD=MX
